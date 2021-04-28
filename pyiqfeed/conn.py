@@ -1660,7 +1660,7 @@ class HistoryConn(FeedConn):
     # "tick-data" in IQFeed parlance means every trade with the latest top of
     # book quote at the time of the trade, NOT every quote and every trade.
     tick_type = np.dtype([('tick_id', 'u8'),
-                          ('date', 'M8[D]'), ('time', 'm8[us]'),
+                          ('date', 'M8[D]'), ('time', 'u8'),
                           ('last', 'f8'), ('last_sz', 'u8'),
                           ('last_type', 'S1'), ('mkt_ctr', 'u4'),
                           ('tot_vlm', 'u8'), ('bid', 'f8'), ('ask', 'f8'),
